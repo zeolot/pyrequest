@@ -2,10 +2,10 @@ import unittest
 import requests
 import os
 import sys
+from db_fixture import test_data
 
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, parentdir)
-from db_fixture import test_data
 
 
 class AddEventTest(unittest.TestCase):
